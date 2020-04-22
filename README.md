@@ -50,7 +50,7 @@ Edit siteMeta data in [`/src/gatsby-config.js`](https://github.com/blkfltchr/gat
   siteMetadata: {
     title: 'Gatsby Freelance Starter', // Title of the website
     description: // Description of the website
-      'A template to quickly and easily bootstrap freelance projects with Gatsby, Contentful and Netlify',
+      'A template to quickly and easily bootstrap freelance projects with Gatsby, Contentful and Netlify.',
     siteUrl: 'https://website.com', // Website URL. Do not include trailing slash
     image: '/images/share.jpg', // Path to default image for SEO
     menuLinks: [ // The links used in the top menu
@@ -151,11 +151,13 @@ GOOGLE_ANALYTICS
 
 ## Additional Settings
 
-### Contentful Webhook (Optional)
+### Contentful Webhook
+
+So that every time you publish to Contentful a deploy will automatically start and be published to production.
 
 1.  Navigate to Netlify:
-    **Settings** → **Build & Deploy** → **Build hooks**.
-    Create a new build hook.
+    **Settings** → **Build & Deploy** → **Scroll down to Build hooks**.
+    Add and save a new build hook and call it: `Contentful build hook`. Copy the build hook url.
 
 2.  Navigate to Contentful:
     **app.contentful.com** → **Space Settings** → **Webhooks**. Create a webhook using the Netlify build URL that you just created
@@ -163,7 +165,7 @@ GOOGLE_ANALYTICS
 
 ![](screenshots/contentful-webhook-selected-events.jpg)
 
-### Netlify Form Notifications (Optional)
+### Netlify Form Notifications
 
 1.  Navigate to Netlify:
     **Forms** → **Notifications**
@@ -174,5 +176,4 @@ GOOGLE_ANALYTICS
 
 ## Useful Tips
 
-- If you make edits to your Contentful space while running `yarn develop` you will need to stop it and rerun the command to see the changes reflected. For example a new post or page will not automatically show up until the website has been rebuilt.
-- **DO NOT** store your Contentful access tokens or space ids anywhere in GitHub. Treat them like passwords.
+- If you make edits to your Contentful space while running `gatsby develop` you will need to stop it and rerun the command to see the changes reflected. For example a new post or page will not automatically show up until the website has been rebuilt.

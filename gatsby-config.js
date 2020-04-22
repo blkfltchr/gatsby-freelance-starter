@@ -19,7 +19,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Freelance Starter',
     description:
-      'A template to quickly and easily bootstrap freelance projects with Gatsby, Contentful and Netlify',
+      'A template to quickly and easily bootstrap freelance projects with Gatsby, Contentful and Netlify.',
     siteUrl: 'https://gatsbyfreelancestarter.netlify.app',
     image: '/images/share.jpg',
     menuLinks: [

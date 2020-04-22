@@ -8,7 +8,7 @@ import SEO from '../components/SEO'
 const Index = data => {
   return (
     <Layout>
-      <SEO title="Home" description="Home description goes here" />
+      <SEO title="Home" />
       <Container>
         <Banner bannerData={data.data.allContentfulHeaderBanner.edges} />
       </Container>
