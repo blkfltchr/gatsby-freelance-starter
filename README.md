@@ -28,7 +28,8 @@ https://gatsbyfreelancestarter.netlify.app/
 via the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli)
 
 ```
-gatsby new gatsby-starter-gcn https://github.com/blkfltchr/gatsby-freelance-starter.git
+gatsby new [PROJECT_NAME] https://github.com/blkfltchr/gatsby-freelance-starter.git
+cd [PROJECT_NAME]
 npm install
 ```
 
